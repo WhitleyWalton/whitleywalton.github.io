@@ -2,14 +2,36 @@
 <html>
 <body>
 
-<h1>
+<!-- Start Paragraph Styles-->
+<style>
+  .title{
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .subtitle{
+    font-family: monospace;
+    font-size: 22px;
+
+
+  }
+
+  .p1{
+    font-family: monospace;
+    font-size: 15px;
+  }
+</style>
+<!-- End Paragraph Styles-->
+<h1 class="title">
   Righteous Devs & Designs
 </h1>
 
-<p>
+<p class="subtitle">
   A portfolio for Whit Righteous.
 </p>
 
+<!-- Start Button Styles-->
 <style>
   .itchio-button {
     background-color:rgb(154, 12, 130);
@@ -24,8 +46,6 @@
     
     transition: opacity 0.2s, 
     background-color 0.2s, color 0.2s, box-shadow 0.15s;
-    
-
   }
 
   .itchio-button:hover{
@@ -41,7 +61,7 @@
 
   .written-button{
     background-color: rgb(190, 22, 108);
-    color: rgb(240, 240, 240);
+    color: rgb(255, 255, 255);
     border-color: rgb(74, 6, 98);
     height: 36px;
     width: 135px;
@@ -60,14 +80,14 @@
   }
 
   .written-button:active{
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(255, 255, 255);
     color: rgb(190, 22, 108);
     opacity: 0.5;
   }
 
   .video-button{
     background-color: purple;
-    color:antiquewhite;
+    color:rgb(255, 255, 255);
     height: 36px;
     width: 100px;
     border-radius: 18px;
@@ -85,15 +105,17 @@
   }
 
   .video-button:active{
-    background-color:antiquewhite;
+    background-color:rgb(255, 255, 255);
     color: purple;
     opacity: 0.7;
   }
-
 </style>
+<!-- End Button Styles-->
+
+<!-- Start Buttons-->
 
 <button class="itchio-button">
-  Play games
+  My Games
 </button>
 
 <button class="written-button">
@@ -103,13 +125,13 @@
 <button class="video-button">
   Videography
 </button>
-
+<!-- End Buttons-->
 <a 
   href="https://whitleywalton.itch.io/" 
   target="_blank">Play my games on itch.io...
 </a>
 
-<p>
+<p class="p1">
   I am a game devsigner (designer + developer) from Indianapolis, Indiana.
   Currently based in Brooklyn, New York, I am obtaining my MFA in Game Design
   at NYU TISCH.
