@@ -39,15 +39,29 @@
     line-height: 20px;
     
   }
-
-  .headshot{
-    height: 50%;
-    width: 50%;
-    margin-top: 10px;
-  }
 </style>
 <!-- End Paragraph Styles-->
 
+<!-- Start Image Styles-->
+<style>
+    .headshot{
+      height: 50%;
+      width: 50%;
+      margin-top: 10px;
+    }
+
+    .column{
+      float: left;
+      width: 33.33%;
+      padding: 2px;
+    }
+
+    .row::after{
+      content: "";
+      clear: both;
+      display: table;
+    }
+</style>
 <!-- Start Button Styles-->
 <style>
   .itchio-button {
@@ -147,7 +161,16 @@
   href="https://whitleywalton.itch.io/" 
   target="_blank">Play my games on itch.io...
 </a>
-<img class="headshot" src="headshot.jpg" alt="Whit's Graduation Picture">
+<!-- Image Start-->
+ <div class="row">
+    <div class="column">
+      <img class="headshot" src="headshot.jpg" alt="Whit's Graduation Picture">
+    </div>
+    <div class="column">
+      <img class="headshot" src="headshot2.jpg" alt="Whit's Graduation Picture 2">
+    </div>
+ </div>
+<!-- Image End-->
 <p class="p1">
   I am a <strong>game devsigner</strong>(designer + developer) from Indianapolis, Indiana.
 </p>
