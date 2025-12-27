@@ -1,190 +1,221 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <h1 class="title">
-      Righteous Devs & Designs
-    </h1>
 
-    <p class="subtitle">
-      A portfolio for Whit Righteous.
-    </p>
+<head>
+  <title>Righteous Devs & Designs</title>
+  <h1 class="title">
+    Righteous Devs & Designs
+  </h1>
 
-  </head>
-  <body style="background-color: rgb(255, 173, 173);">
+  <p class="subtitle">
+    A portfolio for Whit Righteous.
+  </p>
 
-<!-- Start Paragraph Styles-->
-<style>
-  .title{
-    font-family: monospace;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: underline;
-  }
+</head>
 
-  .subtitle{
-    font-family: monospace;
-    font-size: 22px;
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 6;
+<body style="background-color: rgb(255, 173, 173);">
 
-  }
-
-  .p1{
-    font-family: monospace;
-    font-size: 15px;
-    text-align: left;
-    width: 500px;
-    line-height: 20px;
-    
-  }
-</style>
-<!-- End Paragraph Styles-->
-
-<!-- Start Image Styles-->
-<style>
-    .headshot{
-      height: 50%;
-      width: 50%;
-      margin-top: 10px;
+  <!-- Start Paragraph Styles-->
+  <style>
+    .title {
+      font-family: monospace;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: underline;
     }
 
-    .column{
+    .subtitle {
+      font-family: monospace;
+      font-size: 22px;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 6;
+
+    }
+
+    .p1 {
+      font-family: monospace;
+      font-size: 15px;
+      text-align: left;
+      width: 500px;
+      line-height: 20px;
+      margin-left: 12px;
+
+    }
+  </style>
+  <!-- End Paragraph Styles-->
+
+  <!-- Start Image Styles-->
+  <style>
+    .headshot {
+      height: 60%;
+      width: 60%;
+      margin-top: 10px;
+      object-fit: contain;
+      border-width: 2px;
+      border-style: solid;
+      border-color: antiquewhite;
+      border-radius: 5px;
+    }
+
+    .column {
       float: left;
-      width: 33.33%;
+      width: 42.33%;
       padding: 2px;
     }
 
-    .row::after{
+    .row::after {
       content: "";
-      clear: both;
+      clear: none;
       display: table;
     }
-</style>
-<!-- Start Button Styles-->
-<style>
-  .itchio-button {
-    background-color:rgb(154, 12, 130);
-    color:rgb(255, 255, 255);
-    border-color:rgb(239, 63, 201);
-    height: 36px;
-    width: 100px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-right: 4px;
-    font-weight: bold;
-    
-    transition: opacity 0.2s, 
-    background-color 0.2s, color 0.2s, box-shadow 0.15s;
-  }
+  </style>
+  <!-- End Image Styles-->
 
-  .itchio-button:hover{
-    opacity: 0.8;
-    box-shadow: 5px 8px 10px rgb(65, 2, 55, 0.4);
-  }
+  <!-- Start Button Styles-->
+  <style>
+    .itchio-button {
+      background-color: rgb(154, 12, 130);
+      color: rgb(255, 255, 255);
+      border-color: rgb(239, 63, 201);
+      height: 36px;
+      width: 100px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-right: 4px;
+      font-weight: bold;
 
-  .itchio-button:active{
-    opacity: 0.4;
-    background-color: rgb(255, 239, 251);
-    color:rgb(154, 12, 130);
-  }
+      transition: opacity 0.2s,
+        background-color 0.2s, color 0.2s, box-shadow 0.15s;
+    }
 
-  .written-button{
-    background-color: rgb(190, 22, 108);
-    color: rgb(255, 255, 255);
-    border-color: rgb(74, 6, 98);
-    height: 36px;
-    width: 135px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-right: 4px;
-    
-    transition: opacity 0.2s, 
-    background-color 0.2s, color 0.2s, box-shadow 0.15s;
-  }
+    .itchio-button:hover {
+      opacity: 0.8;
+      box-shadow: 5px 8px 10px rgb(65, 2, 55, 0.4);
+    }
 
-  .written-button:hover{
-    opacity: 0.8;
-    box-shadow: 5px 8px 10px rgb(81, 8, 46, 0.4);
-  }
+    .itchio-button:active {
+      opacity: 0.4;
+      background-color: rgb(255, 239, 251);
+      color: rgb(154, 12, 130);
+    }
 
-  .written-button:active{
-    background-color: rgb(255, 255, 255);
-    color: rgb(190, 22, 108);
-    opacity: 0.5;
-  }
+    .written-button {
+      background-color: rgb(190, 22, 108);
+      color: rgb(255, 255, 255);
+      border-color: rgb(74, 6, 98);
+      height: 36px;
+      width: 135px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-right: 4px;
 
-  .video-button{
-    background-color: purple;
-    color:rgb(255, 255, 255);
-    height: 36px;
-    width: 100px;
-    border-radius: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-right: 4px;
-    
-    transition: opacity 0.2s, 
-    background-color 0.2s, color 0.2s, box-shadow 0.15s;
-  }
+      transition: opacity 0.2s,
+        background-color 0.2s, color 0.2s, box-shadow 0.15s;
+    }
 
-  .video-button:hover{
-    opacity: 0.8;
-    box-shadow: 5px 8px 10px rgb(71, 2, 71, 0.4);
-  }
+    .written-button:hover {
+      opacity: 0.8;
+      box-shadow: 5px 8px 10px rgb(81, 8, 46, 0.4);
+    }
 
-  .video-button:active{
-    background-color:rgb(255, 255, 255);
-    color: purple;
-    opacity: 0.7;
-  }
-</style>
-<!-- End Button Styles-->
+    .written-button:active {
+      background-color: rgb(255, 255, 255);
+      color: rgb(190, 22, 108);
+      opacity: 0.5;
+    }
 
-<!-- Start Buttons-->
+    .video-button {
+      background-color: purple;
+      color: rgb(255, 255, 255);
+      height: 36px;
+      width: 100px;
+      border-radius: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-right: 4px;
 
-<button class="itchio-button">
-  My Games
-</button>
+      transition: opacity 0.2s,
+        background-color 0.2s, color 0.2s, box-shadow 0.15s;
+    }
 
-<button class="written-button">
-  Written Works
-</button>
+    .video-button:hover {
+      opacity: 0.8;
+      box-shadow: 5px 8px 10px rgb(71, 2, 71, 0.4);
+    }
 
-<button class="video-button">
-  Videography
-</button>
-<!-- End Buttons-->
-<a 
-  href="https://whitleywalton.itch.io/" 
-  target="_blank">Play my games on itch.io...
-</a>
-<!-- Image Start-->
- <div class="row">
+    .video-button:active {
+      background-color: rgb(255, 255, 255);
+      color: purple;
+      opacity: 0.7;
+    }
+  </style>
+  <!-- End Button Styles-->
+
+  <!-- Start Input Styles-->
+  <style>
+    .feedback-bar {
+      font-size: 15px;
+      margin-left: 12px;
+      border-radius: 10px;
+    }
+  </style>
+  <!-- End Input Styles-->
+
+  <!-- Start Buttons-->
+  <button class="itchio-button">
+    My Games
+  </button>
+
+  <button class="written-button">
+    Written Works
+  </button>
+
+  <button class="video-button">
+    Videography
+  </button>
+  <!-- End Buttons-->
+
+  <!-- Start Links-->
+  <a href="https://whitleywalton.itch.io/" target="_blank">Play my games on itch.io...
+  </a>
+  <!-- End Links-->
+
+  <!-- Image Start-->
+  <div class="row">
     <div class="column">
       <img class="headshot" src="headshot.jpg" alt="Whit's Graduation Picture">
     </div>
     <div class="column">
       <img class="headshot" src="headshot2.jpg" alt="Whit's Graduation Picture 2">
     </div>
- </div>
-<!-- Image End-->
-<p class="p1">
-  I am a <strong>game devsigner</strong>(designer + developer) from Indianapolis, Indiana.
-</p>
-<p class="p1">
-  Currently based in Brooklyn, New York, I am obtaining my <strong>MFA in Game Design</strong>
-  at NYU TISCH.
-</p>
-<p class="p1">
-  Recently, I graduted from <strong>Spelman College</strong> in Atlanta, Georgia with my B.S. in 
-  Computer Science with an Art Minor.
-</p>
-<p class="p1">
-  I am a multi-hyphenated artist, Leo Sun, and Calculus II enthusiast.
-</p>
+  </div>
+  <!-- Image End-->
 
-  </body>
+  <!-- Bio Start-->
+  <p class="p1">
+    I am a <strong>game devsigner</strong>(designer + developer) from Indianapolis, Indiana.
+  </p>
+  <p class="p1">
+    Currently based in Brooklyn, New York, I am obtaining my <strong>MFA in Game Design</strong>
+    at NYU TISCH.
+  </p>
+  <p class="p1">
+    Recently, I graduted from <strong>Spelman College</strong> in Atlanta, Georgia with my B.S. in
+    Computer Science with an Art Minor.
+  </p>
+  <p class="p1">
+    I am a multi-hyphenated artist, Leo Sun, and Calculus II enthusiast.
+  </p>
+  <!-- Bio End-->
+
+  <!-- Text Start-->
+  <input class="feedback-bar" type="text" placeholder="Tell me your game ideas...">
+  <input type="checkbox">
+  <!-- Text End-->
+
+</body>
+
 </html>
