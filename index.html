@@ -38,16 +38,26 @@
       font-family: monospace;
       font-size: 15px;
       text-align: left;
-      width: 700px;
       line-height: 20px;
       margin-left: 12px;
-      display: block;
+      display: inline-block;
+      width: 200px;
+
+    }
+
+    .p2 {
+      font-family: monospace;
+      font-size: 15px;
+      text-align: middle;
+      line-height: 20px;
+      margin-left: 12px;
+      display: inline-block;
 
     }
 
     .div-bio {
       width: 300px;
-      display: inline;
+      display: inline-block;
     }
   </style>
   <!-- End Paragraph Styles-->
@@ -66,8 +76,8 @@
     }
 
     .column {
-      float: left;
-      width: 42.33%;
+      float: inline-start;
+      width: 40.33%;
       padding: 2px;
     }
 
@@ -199,41 +209,51 @@
   </a>
   <!-- End Links-->
 
-  <!-- Image Start-->
+  <!-- Image & Bio Start-->
   <div class="row">
     <div class="column">
       <img class="headshot" src="images/headshot2.jpg" alt="Whit's Graduation Picture 2">
+      <p class="p1">
+        I am a <strong>game devsigner</strong>(designer + developer) from Indianapolis, Indiana.
+      </p>
     </div>
     <div class="column">
       <img class="headshot" src="images/headshot3.jpg" alt="Whit's Graduation Picture 3">
+      <p class="p1">
+        Currently based in Brooklyn, New York, I am obtaining my <strong>MFA in Game Design</strong>
+        at NYU TISCH.
+      </p>
     </div>
     <div class="column">
       <img class="headshot" src="images/headshot4.jpg" alt="Whit's Graduation Picture 4">
+      <p class="p1">
+        Recently, I graduted from <strong>Spelman College</strong> in Atlanta, Georgia with my B.S. in
+        Computer Science with an Art Minor.
+      </p>
     </div>
     <div class="column">
       <img class="headshot" src="images/headshot5.jpg" alt="Whit's Graduation Picture 5">
+      <p class="p1">
+        I am a multi-hyphenated artist, Leo Sun, and Calculus II enthusiast.
+      </p>
     </div>
   </div>
-  <!-- Image End-->
+  <!-- Image & Bio End-->
 
-  <!-- Bio Start-->
+  <!-- Skills Start-->
   <div class="div-bio">
-    <p class="p1">
-      I am a <strong>game devsigner</strong>(designer + developer) from Indianapolis, Indiana.
-    </p>
-    <p class="p1">
-      Currently based in Brooklyn, New York, I am obtaining my <strong>MFA in Game Design</strong>
-      at NYU TISCH.
-    </p>
-    <p class="p1">
-      Recently, I graduted from <strong>Spelman College</strong> in Atlanta, Georgia with my B.S. in
-      Computer Science with an Art Minor.
-    </p>
-    <p class="p1">
-      I am a multi-hyphenated artist, Leo Sun, and Calculus II enthusiast.
+    <p class="p2">
+      I know C++, C#, Python, SQL, HTML, CSS, Javascript, and am familiar with data structures and algorithms.
     </p>
   </div>
-  <!-- Bio End-->
+
+  <div class="div-bio">
+    <p class="p2">
+      I have 7 years of education in Mandarin Chinese. I have interned at companies like Microsoft, Verizon, and
+      Electronic Arts (EA).
+    </p>
+  </div>
+  <!-- Skills End-->
 
   <!-- Input Start-->
   <input class="feedback-bar" type="text" placeholder="Tell me your game ideas...">
