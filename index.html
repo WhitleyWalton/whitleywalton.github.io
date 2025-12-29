@@ -41,7 +41,13 @@
       width: 700px;
       line-height: 20px;
       margin-left: 12px;
+      display: block;
 
+    }
+
+    .div-bio {
+      width: 300px;
+      display: inline;
     }
   </style>
   <!-- End Paragraph Styles-->
@@ -85,6 +91,7 @@
       cursor: pointer;
       margin-right: 4px;
       font-weight: bold;
+      display: inline-block;
 
       transition: opacity 0.2s,
         background-color 0.2s, color 0.2s, box-shadow 0.15s;
@@ -111,6 +118,7 @@
       cursor: pointer;
       font-weight: bold;
       margin-right: 4px;
+      display: inline-block;
 
       transition: opacity 0.2s,
         background-color 0.2s, color 0.2s, box-shadow 0.15s;
@@ -136,6 +144,7 @@
       font-weight: bold;
       cursor: pointer;
       margin-right: 4px;
+      display: inline-block;
 
       transition: opacity 0.2s,
         background-color 0.2s, color 0.2s, box-shadow 0.15s;
@@ -160,6 +169,13 @@
       font-size: 15px;
       margin-left: 12px;
       border-radius: 10px;
+      vertical-align: middle;
+    }
+
+    .email-bar {
+      font-size: 15px;
+      margin-left: 12px;
+      vertical-align: middle;
     }
   </style>
   <!-- End Input Styles-->
@@ -201,26 +217,29 @@
   <!-- Image End-->
 
   <!-- Bio Start-->
-  <p class="p1">
-    I am a <strong>game devsigner</strong>(designer + developer) from Indianapolis, Indiana.
-  </p>
-  <p class="p1">
-    Currently based in Brooklyn, New York, I am obtaining my <strong>MFA in Game Design</strong>
-    at NYU TISCH.
-  </p>
-  <p class="p1">
-    Recently, I graduted from <strong>Spelman College</strong> in Atlanta, Georgia with my B.S. in
-    Computer Science with an Art Minor.
-  </p>
-  <p class="p1">
-    I am a multi-hyphenated artist, Leo Sun, and Calculus II enthusiast.
-  </p>
+  <div class="div-bio">
+    <p class="p1">
+      I am a <strong>game devsigner</strong>(designer + developer) from Indianapolis, Indiana.
+    </p>
+    <p class="p1">
+      Currently based in Brooklyn, New York, I am obtaining my <strong>MFA in Game Design</strong>
+      at NYU TISCH.
+    </p>
+    <p class="p1">
+      Recently, I graduted from <strong>Spelman College</strong> in Atlanta, Georgia with my B.S. in
+      Computer Science with an Art Minor.
+    </p>
+    <p class="p1">
+      I am a multi-hyphenated artist, Leo Sun, and Calculus II enthusiast.
+    </p>
+  </div>
   <!-- Bio End-->
 
-  <!-- Text Start-->
+  <!-- Input Start-->
   <input class="feedback-bar" type="text" placeholder="Tell me your game ideas...">
-  <input type="checkbox">
-  <!-- Text End-->
+  <input class="email-bar" type="text" placeholder="Name">
+  <input class="email-bar" type="text" placeholder="Email">
+  <!-- Input End-->
 
 </body>
 
