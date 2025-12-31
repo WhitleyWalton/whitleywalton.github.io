@@ -106,7 +106,7 @@
       width: auto;
     }
 
-    .itchio-button {
+    .games-button {
       background-color: rgb(154, 12, 130);
       color: rgb(255, 255, 255);
       border-color: rgb(239, 63, 201);
@@ -122,12 +122,12 @@
         background-color 0.2s, color 0.2s, box-shadow 0.15s;
     }
 
-    .itchio-button:hover {
+    .games-button:hover {
       opacity: 0.8;
       box-shadow: 5px 8px 10px rgb(65, 2, 55, 0.4);
     }
 
-    .itchio-button:active {
+    .games-button:active {
       opacity: 0.4;
       background-color: rgb(255, 239, 251);
       color: rgb(154, 12, 130);
@@ -217,23 +217,22 @@
 
   <div class="top-row">
     <!-- Start Buttons-->
-    <button class="itchio-button" onclick="alert('Would you like to play a game?')">
+    <button class="games-button" onclick="document.location='games.html'">
       My Games
     </button>
 
-    <button class="written-button" onclick="alert('You think you can read me?')">
+    <button class="written-button" onclick="document.location='writtenWorks.html'">
       Written Works
     </button>
 
     <button class="video-button" onclick="alert('Camera rolling...sound speeding...and action!')">
       Videography
     </button>
-    <!-- End Buttons-->
 
-    <!-- Start Links-->
-    <a href="https://whitleywalton.itch.io/" target="_blank">Play my games on itch.io...
-    </a>
-    <!-- End Links-->
+    <button class="games-button" onclick="document.location='https://whitleywalton.itch.io/'">
+      itch.io
+    </button>
+    <!-- End Buttons-->
 
     <!-- Audio Start-->
     <div class="music">
@@ -245,7 +244,7 @@
     <!-- Audio End-->
 
     <!-- Start Buttons-->
-    <button class="itchio-button" onclick="alert('Would you like to play a game?')">
+    <button class="games-button" onclick="alert('Would you like to play a game?')">
       Visual Art
     </button>
 
