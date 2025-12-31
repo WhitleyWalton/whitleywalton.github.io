@@ -37,11 +37,12 @@
     .p1 {
       font-family: monospace;
       font-size: 15px;
-      text-align: left;
+      text-align: middle;
       line-height: 20px;
       margin-left: 12px;
       display: inline-block;
       width: 200px;
+
 
     }
 
@@ -52,7 +53,7 @@
       line-height: 20px;
       margin-left: 12px;
       display: inline-block;
-
+      width: 200px;
     }
 
     .div-bio {
@@ -76,21 +77,35 @@
     }
 
     .column {
-      float: inline-start;
-      width: 40.33%;
+      float: inline;
+      width: 50%;
       padding: 2px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: auto;
     }
 
     .row::after {
       content: "";
       clear: both;
-      display: table;
+      display: flex;
+      align-items: center;
+      vertical-align: middle;
+      width: 50%;
+
     }
   </style>
   <!-- End Image Styles-->
 
   <!-- Start Button Styles-->
   <style>
+    .top-row {
+      display: inline;
+      margin: auto;
+      width: auto;
+    }
+
     .itchio-button {
       background-color: rgb(154, 12, 130);
       color: rgb(255, 255, 255);
@@ -200,7 +215,7 @@
   <!-- End Input Styles-->
 
 
-  <div>
+  <div class="top-row">
     <!-- Start Buttons-->
     <button class="itchio-button" onclick="alert('Would you like to play a game?')">
       My Games
@@ -214,6 +229,7 @@
       Videography
     </button>
     <!-- End Buttons-->
+
     <!-- Start Links-->
     <a href="https://whitleywalton.itch.io/" target="_blank">Play my games on itch.io...
     </a>
@@ -227,35 +243,63 @@
       </audio>
     </div>
     <!-- Audio End-->
+
+    <!-- Start Buttons-->
+    <button class="itchio-button" onclick="alert('Would you like to play a game?')">
+      Visual Art
+    </button>
+
+    <button class="written-button" onclick="alert('You think you can read me?')">
+      3D Assets
+    </button>
+
+    <button class="video-button" onclick="alert('Camera rolling...sound speeding...and action!')">
+      Disc Jocky
+    </button>
+    <!-- End Buttons-->
   </div>
 
 
   <!-- Image & Bio Start-->
   <div class="row">
     <div class="column">
-      <img class="headshot" src="images/headshot2.jpg" alt="Whit's Graduation Picture 2">
       <p class="p1">
         I am a <strong>game devsigner</strong>(designer + developer) from Indianapolis, Indiana.
       </p>
+      <img class="headshot" src="images/headshot2.jpg" alt="Whit's Graduation Picture 2">
+      <p class="p2">
+        I know C++, C#, Python, SQL, HTML, CSS, Javascript, and am familiar with data structures and algorithms.
+      </p>
     </div>
     <div class="column">
-      <img class="headshot" src="images/headshot3.JPG" alt="Whit's Graduation Picture 3">
       <p class="p1">
         Currently based in Brooklyn, New York, I am obtaining my <strong>MFA in Game Design</strong>
         at NYU TISCH.
       </p>
+      <img class="headshot" src="images/headshot3.JPG" alt="Whit's Graduation Picture 3">
+      <p class="p2">
+        I have 7 years of education in Mandarin Chinese. I have interned at companies like Microsoft, Verizon, and
+        Electronic Arts (EA).
+      </p>
     </div>
     <div class="column">
-      <img class="headshot" src="images/headshot4.JPG" alt="Whit's Graduation Picture 4">
       <p class="p1">
         Recently, I graduted from <strong>Spelman College</strong> in Atlanta, Georgia with my B.S. in
         Computer Science with an Art Minor.
       </p>
+      <img class="headshot" src="images/headshot4.JPG" alt="Whit's Graduation Picture 4">
+      <p class="p2">
+        I create games to reflect my personal experiences through liberating marginalized voices via a queer
+        Afrofuturistic lens.
+      </p>
     </div>
     <div class="column">
-      <img class="headshot" src="images/headshot5.JPG" alt="Whit's Graduation Picture 5">
       <p class="p1">
         I am a multi-hyphenated artist, Leo Sun, and Calculus II enthusiast.
+      </p>
+      <img class="headshot" src="images/headshot5.JPG" alt="Whit's Graduation Picture 5">
+      <p class="p2">
+        I am committed to ethicically creating computer and human generated art.
       </p>
     </div>
   </div>
@@ -264,27 +308,25 @@
   <!-- Skills Start-->
   <div class="div-bio">
     <p class="p2">
-      I know C++, C#, Python, SQL, HTML, CSS, Javascript, and am familiar with data structures and algorithms.
+      MUSE Score.
     </p>
   </div>
 
   <div class="div-bio">
     <p class="p2">
-      I have 7 years of education in Mandarin Chinese. I have interned at companies like Microsoft, Verizon, and
-      Electronic Arts (EA).
+      Gemini Moon.
     </p>
   </div>
 
   <div class="div-bio">
     <p class="p2">
-      I create games to reflect my personal experiences through liberating marginalized voices via a queer
-      Afrofuturistic lens.
+      Aquarius Rising.
     </p>
   </div>
 
   <div class="div-bio">
     <p class="p2">
-      I coded this website by hand,,, and I am committed to ethicically creating computer and human generated art.
+      Website coded by Whit Righteous.
     </p>
   </div>
 
