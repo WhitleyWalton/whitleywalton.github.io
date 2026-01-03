@@ -76,6 +76,28 @@
         background-color 0.2s, color 0.2s;
     }
 
+    div.flex-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    div.flex-container>div {
+      margin: 8px;
+      background-color: antiquewhite;
+      width: 300px;
+      border-radius: 5px;
+      -ms-flex-align: center;
+      align-items: center;
+
+
+    }
+
+    @media screen and (max-width:600px) {
+      div.flex-container {
+        felx-direction: column;
+      }
+    }
+
     .p1 {
       font-family: monospace;
       font-size: 15px;
@@ -142,36 +164,6 @@
   </style>
   <!-- End Image Styles-->
 
-  <!-- Start Button Styles-->
-  <style>
-    .games-button {
-      background-color: rgb(154, 12, 130);
-      color: rgb(255, 255, 255);
-      border-color: rgb(239, 63, 201);
-      height: 36px;
-      width: 100px;
-      border-radius: 10px;
-      cursor: pointer;
-      margin-right: 4px;
-      font-weight: bold;
-      display: inline-block;
-
-      transition: opacity 0.2s,
-        background-color 0.2s, color 0.2s, box-shadow 0.15s;
-    }
-
-    .games-button:hover {
-      opacity: 0.8;
-      box-shadow: 5px 8px 10px rgb(65, 2, 55, 0.4);
-    }
-
-    .games-button:active {
-      opacity: 0.4;
-      background-color: rgb(255, 239, 251);
-      color: rgb(154, 12, 130);
-    }
-  </style>
-  <!-- End Button Styles-->
 
   <!-- Start Music Styles-->
   <style>
@@ -182,24 +174,18 @@
   </style>
   <!-- End Music Styles-->
 
-  <!-- Start Input Styles-->
+  <!-- Start Footer Styles-->
   <style>
-    .feedback-bar {
-      font-size: 15px;
-      margin-left: 12px;
-      border-radius: 10px;
-      vertical-align: middle;
-    }
-
-    .email-bar {
-      font-size: 15px;
-      margin-left: 12px;
-      vertical-align: middle;
-    }
-
-    .bottom-row {
-      display: inline-block;
-      vertical-align: middle;
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: purple;
+      padding: 8x;
+      text-align: center;
+      z-index: 1000;
+      color: antiquewhite;
     }
   </style>
   <!-- End Input Styles-->
@@ -214,56 +200,60 @@
   </ul>
 
   <div class="topnav">
-    <!-- Start Buttons-->
 
-    <button class="games-button" onclick="document.location='https://whitleywalton.itch.io/'">
-      itch.io
-    </button>
-    <!-- End Buttons-->
   </div>
 
 
   <!-- Image & Bio Start-->
-  <div class="row">
-    <div class="column">
+  <div class="flex-container">
+    <div>
+      <h2 class="subtitle">Who am I?</h2>
       <p class="p1">
         I am a <strong>game devsigner</strong>(designer + developer) from Indianapolis, Indiana.
       </p>
-      <img class="headshot" src="images/headshot2.jpg" alt="Whit's Graduation Picture 2">
-      <p class="p2">
-        I know C++, C#, Python, SQL, HTML, CSS, Javascript, and am familiar with data structures and algorithms.
+      <p class="p1">
+        Recently, I graduated from <strong>Spelman College</strong> in Atlanta, Georgia with my B.S. in
+        Computer Science with an Art Minor.
       </p>
     </div>
-    <div class="column">
+
+    <div>
+      <h2 class="subtitle">Where am I?</h2>
       <p class="p1">
         Currently based in Brooklyn, New York, I am obtaining my <strong>MFA in Game Design</strong>
         at NYU TISCH.
       </p>
-      <img class="headshot" src="images/headshot3.JPG" alt="Whit's Graduation Picture 3">
-      <p class="p2">
-        I have 7 years of education in Mandarin Chinese. I have interned at companies like Microsoft, Verizon, and
-        Electronic Arts (EA).
+      <p class="p1">
+        I have <strong>interned</strong> at companies like Microsoft, Verizon, and
+        Electronic Arts (EA). <strong>Innovation Labs</strong> are my safe space.
       </p>
     </div>
-    <div class="column">
+
+    <div>
+      <h2 class="subtitle">
+        What am I?
+      </h2>
       <p class="p1">
-        Recently, I graduted from <strong>Spelman College</strong> in Atlanta, Georgia with my B.S. in
-        Computer Science with an Art Minor.
+        I am a multi-hyphenated artist, <strong>Mandarin Chinese</strong> student, and Calculus II enthusiast.
       </p>
+      <p class="p1">
+        I create games to reflect my personal experiences through liberating marginalized voices via a <strong>queer
+          Afrofuturistic</strong> lens.
+      </p>
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="column">
+      <img class="headshot" src="images/headshot2.jpg" alt="Whit's Graduation Picture 2">
+    </div>
+    <div class="column">
       <img class="headshot" src="images/headshot4.JPG" alt="Whit's Graduation Picture 4">
-      <p class="p2">
-        I create games to reflect my personal experiences through liberating marginalized voices via a queer
-        Afrofuturistic lens.
-      </p>
     </div>
     <div class="column">
-      <p class="p1">
-        I am a multi-hyphenated artist, Leo Sun, and Calculus II enthusiast.
-      </p>
       <img class="headshot" src="images/headshot5.JPG" alt="Whit's Graduation Picture 5">
-      <p class="p2">
-        I am committed to ethicically creating computer and human generated art.
-      </p>
     </div>
   </div>
   <!-- Image & Bio End-->
@@ -275,26 +265,34 @@
     </p>
   </div>
 
-  <div class="div-bio">
-    <p class="p2">
-      Gemini Moon.
-    </p>
-  </div>
 
-  <div class="div-bio">
-    <p class="p2">
-      Aquarius Rising.
-    </p>
-  </div>
 
-  <div class="div-bio">
-    <p class="p2">
-      Website coded by Whit Righteous.
-    </p>
-  </div>
-  <!-- Skills End-->
+  <!-- Footer Start-->
+  <footer>
+    <div class="div-bio">
+      <p class="p2">
+        Leo Sun.
+      </p>
+    </div>
 
-  <!-- Input Start-->
+    <div class="div-bio">
+      <p class="p2">
+        Gemini Moon.
+      </p>
+    </div>
+
+    <div class="div-bio">
+      <p class="p2">
+        Aquarius Rising.
+      </p>
+    </div>
+
+    <div class="div-bio">
+      <p class="p2">
+        Coded by Whit Righteous.
+      </p>
+    </div>
+  </footer>
   <div class="bottom-row">
     <!-- Audio Start-->
     <div class="music">
@@ -304,9 +302,6 @@
       </audio>
     </div>
     <!-- Audio End-->
-    <input class="feedback-bar" type="text" placeholder="Tell me your game ideas...">
-    <input class="email-bar" type="text" placeholder="Name">
-    <input class="email-bar" type="text" placeholder="Email">
   </div>
 
   <!-- Input End-->
