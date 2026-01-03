@@ -2,21 +2,35 @@
 <html>
 
 <head>
-  <title>Righteous Devs & Designs</title>
-  <div>
-    <h1 class="title">
-      Righteous Devs & Designs
-    </h1>
-    <p class="subtitle">
-      A portfolio for Whit Righteous
-    </p>
-  </div>
+  <header>
+    <title>Righteous Devs & Designs</title>
+    <div>
+      <h1 class="title">
+        Righteous Devs & Designs
+      </h1>
+      <p class="subtitle">
+        A portfolio for Whit Righteous
+      </p>
+    </div>
+  </header>
 </head>
 
 <body style="background-color: rgb(255, 173, 173);">
 
   <!-- Start Paragraph Styles-->
   <style>
+    * {
+      box-sizing: border-box;
+
+    }
+
+    header {
+      text-align: center;
+      padding: 10px;
+      background-color: rgb(154, 12, 130);
+      border-radius: 5px;
+    }
+
     .title {
       font-family: monospace;
       font-size: 30px;
@@ -32,6 +46,34 @@
       text-align: center;
       margin-bottom: 6;
 
+    }
+
+    /*Style the topnav */
+    ul.topnav {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      border-radius: 5px;
+      background-color: rgb(190, 22, 108);
+    }
+
+    /*Style links in topnav */
+    ul.topnav li a {
+      display: block;
+      padding: 14px 16px;
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+    }
+
+    /* Change color on hover for topnav */
+    ul.topnav li a:hover {
+      background-color: purple;
+      color: antiquewhite;
+      border-radius: 5px;
+      transition: opacity 0.2s,
+        background-color 0.2s, color 0.2s;
     }
 
     .p1 {
@@ -59,6 +101,8 @@
     .div-bio {
       width: 300px;
       display: inline-block;
+      align-items: center;
+
     }
   </style>
   <!-- End Paragraph Styles-->
@@ -100,12 +144,6 @@
 
   <!-- Start Button Styles-->
   <style>
-    .top-row {
-      display: inline;
-      margin: auto;
-      width: auto;
-    }
-
     .games-button {
       background-color: rgb(154, 12, 130);
       color: rgb(255, 255, 255);
@@ -131,59 +169,6 @@
       opacity: 0.4;
       background-color: rgb(255, 239, 251);
       color: rgb(154, 12, 130);
-    }
-
-    .written-button {
-      background-color: rgb(190, 22, 108);
-      color: rgb(255, 255, 255);
-      border-color: rgb(74, 6, 98);
-      height: 36px;
-      width: 135px;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: bold;
-      margin-right: 4px;
-      display: inline-block;
-
-      transition: opacity 0.2s,
-        background-color 0.2s, color 0.2s, box-shadow 0.15s;
-    }
-
-    .written-button:hover {
-      opacity: 0.8;
-      box-shadow: 5px 8px 10px rgb(81, 8, 46, 0.4);
-    }
-
-    .written-button:active {
-      background-color: rgb(255, 255, 255);
-      color: rgb(190, 22, 108);
-      opacity: 0.5;
-    }
-
-    .video-button {
-      background-color: purple;
-      color: rgb(255, 255, 255);
-      height: 36px;
-      width: 100px;
-      border-radius: 18px;
-      font-weight: bold;
-      cursor: pointer;
-      margin-right: 4px;
-      display: inline-block;
-
-      transition: opacity 0.2s,
-        background-color 0.2s, color 0.2s, box-shadow 0.15s;
-    }
-
-    .video-button:hover {
-      opacity: 0.8;
-      box-shadow: 5px 8px 10px rgb(71, 2, 71, 0.4);
-    }
-
-    .video-button:active {
-      background-color: rgb(255, 255, 255);
-      color: purple;
-      opacity: 0.7;
     }
   </style>
   <!-- End Button Styles-->
@@ -211,49 +196,28 @@
       margin-left: 12px;
       vertical-align: middle;
     }
+
+    .bottom-row {
+      display: inline-block;
+      vertical-align: middle;
+    }
   </style>
   <!-- End Input Styles-->
 
+  <!-- Top row for options-->
+  <ul class="topnav">
+    <li><a href="games.html">Game Devsign</a></li>
+    <li><a href="#">Visual Art</a></li>
+    <li><a href="#">Video & Photo</a></li>
+    <li><a href="writtenWorks.html">Written Works</a></li>
+    <li><a href="#">Disc Jocky</a></li>
+  </ul>
 
-  <div class="top-row">
+  <div class="topnav">
     <!-- Start Buttons-->
-    <button class="games-button" onclick="document.location='games.html'">
-      My Games
-    </button>
-
-    <button class="written-button" onclick="document.location='writtenWorks.html'">
-      Written Works
-    </button>
-
-    <button class="video-button" onclick="alert('Camera rolling...sound speeding...and action!')">
-      Videography
-    </button>
 
     <button class="games-button" onclick="document.location='https://whitleywalton.itch.io/'">
       itch.io
-    </button>
-    <!-- End Buttons-->
-
-    <!-- Audio Start-->
-    <div class="music">
-      <audio controls autoplay>
-        <source src="audio/MUSE_SCORE.mp3" type="audio/mpeg">
-        Your broswer does not support the audio element.
-      </audio>
-    </div>
-    <!-- Audio End-->
-
-    <!-- Start Buttons-->
-    <button class="games-button" onclick="alert('Would you like to play a game?')">
-      Visual Art
-    </button>
-
-    <button class="written-button" onclick="alert('You think you can read me?')">
-      3D Assets
-    </button>
-
-    <button class="video-button" onclick="alert('Camera rolling...sound speeding...and action!')">
-      Disc Jocky
     </button>
     <!-- End Buttons-->
   </div>
@@ -328,16 +292,18 @@
       Website coded by Whit Righteous.
     </p>
   </div>
-
-  <div class="div-bio">
-    <p class="p2">
-      Thank you.
-    </p>
-  </div>
   <!-- Skills End-->
 
   <!-- Input Start-->
-  <div>
+  <div class="bottom-row">
+    <!-- Audio Start-->
+    <div class="music">
+      <audio controls autoplay>
+        <source src="audio/MUSE_SCORE.mp3" type="audio/mpeg">
+        Your broswer does not support the audio element.
+      </audio>
+    </div>
+    <!-- Audio End-->
     <input class="feedback-bar" type="text" placeholder="Tell me your game ideas...">
     <input class="email-bar" type="text" placeholder="Name">
     <input class="email-bar" type="text" placeholder="Email">

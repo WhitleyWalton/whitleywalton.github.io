@@ -1,0 +1,39 @@
+<!-- Start Button Styles-->
+<style>
+  .games-button {
+    background-color: rgb(154, 12, 130);
+    color: rgb(255, 255, 255);
+    border-color: rgb(239, 63, 201);
+    height: 36px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 4px;
+    font-weight: bold;
+    display: inline-block;
+
+    transition: opacity 0.2s,
+      background-color 0.2s, color 0.2s, box-shadow 0.15s;
+  }
+
+  .games-button:hover {
+    opacity: 0.8;
+    box-shadow: 5px 8px 10px rgb(65, 2, 55, 0.4);
+  }
+
+  .games-button:active {
+    opacity: 0.4;
+    background-color: rgb(255, 239, 251);
+    color: rgb(154, 12, 130);
+  }
+</style>
+
+<!-- Start Buttons-->
+<button class="games-button" onclick="document.location='games.html'">
+  My Games
+</button>
+
+<button class="written-button" onclick="document.location='writtenWorks.html'">
+  Written Works
+</button>
+<!-- End Buttons-->
