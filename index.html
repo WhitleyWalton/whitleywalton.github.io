@@ -86,16 +86,20 @@
       background-color: antiquewhite;
       width: 300px;
       border-radius: 5px;
-      -ms-flex-align: center;
-      align-items: center;
-
-
     }
 
     @media screen and (max-width:600px) {
       div.flex-container {
         felx-direction: column;
       }
+    }
+
+    .three-col {
+      column-count: 3;
+      column-gap: 40px;
+      column-rule-style: solid;
+      column-rule-width: 1px;
+      column-width: 300px;
     }
 
     .p1 {
@@ -133,13 +137,17 @@
   <style>
     .headshot {
       height: 50%;
-      width: 50%;
+      width: 70%;
       margin-top: 10px;
       object-fit: contain;
       border-width: 2px;
       border-style: solid;
       border-color: antiquewhite;
       border-radius: 5px;
+    }
+
+    .row {
+      display: flex;
     }
 
     .column {
@@ -150,16 +158,6 @@
       align-items: center;
       gap: 10px;
       margin: auto;
-    }
-
-    .row::after {
-      content: "";
-      clear: both;
-      display: flex;
-      align-items: center;
-      vertical-align: middle;
-      width: 50%;
-
     }
   </style>
   <!-- End Image Styles-->
@@ -198,12 +196,6 @@
     <li><a href="writtenWorks.html">Written Works</a></li>
     <li><a href="#">Disc Jocky</a></li>
   </ul>
-
-  <div class="topnav">
-
-  </div>
-
-
   <!-- Image & Bio Start-->
   <div class="flex-container">
     <div>
@@ -243,7 +235,6 @@
 
     </div>
   </div>
-
 
   <div class="row">
     <div class="column">
