@@ -26,9 +26,9 @@
 
     header {
       text-align: center;
-      padding: 10px;
+      padding: 2px;
       background-color: rgb(154, 12, 130);
-      border-radius: 5px;
+      width: 100%;
     }
 
     .title {
@@ -54,7 +54,6 @@
       list-style-type: none;
       margin: 0;
       padding: 0;
-      border-radius: 5px;
       background-color: rgb(190, 22, 108);
     }
 
@@ -67,11 +66,15 @@
       font-size: 16px;
     }
 
+    ul.topnav li a.active {
+      color: purple;
+      background-color: antiquewhite;
+    }
+
     /* Change color on hover for topnav */
     ul.topnav li a:hover {
       background-color: purple;
       color: antiquewhite;
-      border-radius: 5px;
       transition: opacity 0.2s,
         background-color 0.2s, color 0.2s;
     }
@@ -191,6 +194,7 @@
 
   <!-- Top row for options-->
   <ul class="topnav">
+    <li><a class="active" href="#home">Home</a></li>
     <li><a href="games.html">Game Devsign</a></li>
     <li><a href="#">Visual Art</a></li>
     <li><a href="#">Video & Photo</a></li>
