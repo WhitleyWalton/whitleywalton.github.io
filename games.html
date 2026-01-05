@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-  <title>Games</title>
+  <header>
+    <title>Games</title>
 
 <body style="background-color: rgb(255, 173, 173);">
   <div>
@@ -13,10 +14,72 @@
       Various game projects developed solo and on teams.
     </p>
   </div>
+  </header>
   </head>
 </body>
 <!-- Paragraph Styles Start-->
 <style>
+  * {
+    box-sizing: border-box;
+
+  }
+
+  header {
+    text-align: center;
+    padding: 2px;
+    background-color: rgb(154, 12, 130);
+    width: 100%;
+  }
+
+  .title {
+    font-family: monospace;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    color: antiquewhite;
+  }
+
+  .subtitle {
+    font-family: monospace;
+    font-size: 22px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 6;
+
+  }
+
+  /*Style the topnav */
+  ul.topnav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(190, 22, 108);
+  }
+
+
+  /*Style links in topnav */
+  ul.topnav li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+
+  ul.topnav li a.active {
+    color: purple;
+    background-color: antiquewhite;
+  }
+
+  /* Change color on hover for topnav */
+  ul.topnav li a:hover {
+    background-color: purple;
+    color: antiquewhite;
+    transition: opacity 0.2s,
+      background-color 0.2s, color 0.2s;
+  }
+
   .title {
     font-family: monospace;
     font-size: 30px;
@@ -31,6 +94,18 @@
     font-style: italic;
     text-align: center;
     margin-bottom: 6;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: purple;
+    padding: 8x;
+    text-align: center;
+    z-index: 1000;
+    color: antiquewhite;
   }
 </style>
 <!-- Start Button Styles-->
@@ -64,10 +139,30 @@
 </style>
 <!-- End Button Styles-->
 
+<!-- Top row for options-->
+<ul class="topnav">
+  <li><a href="index.html">Home</a></li>
+  <li><a class="active" href="games.html">Game Devsign</a></li>
+  <li><a href="visualArt.html">Visual Art</a></li>
+  <li><a href="videoPhoto.html">Video & Photo</a></li>
+  <li><a href="writtenWorks.html">Written Works</a></li>
+  <li><a href="dj.html">Disc Jocky</a></li>
+</ul>
+
 <!-- Start Buttons-->
 <button class="games-button" onclick="document.location='https://whitleywalton.itch.io/'">
   itch.io
 </button>
 <!-- End Buttons-->
+
+<!-- Footer Start-->
+<footer>
+  <div class="div-bio">
+    <p class="p2">
+      Coded by Whit Righteous.
+    </p>
+  </div>
+</footer>
+<div class="bottom-row">
 
 </html>
