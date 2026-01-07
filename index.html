@@ -121,7 +121,7 @@
     .p2 {
       font-family: monospace;
       font-size: 15px;
-      text-align: middle;
+      text-align: right;
       line-height: 20px;
       margin-left: 12px;
       display: inline-block;
@@ -170,8 +170,11 @@
   <!-- Start Music Styles-->
   <style>
     .music {
+      color: lightpink;
       border-radius: 15px;
       display: inline-block;
+
+
     }
   </style>
   <!-- End Music Styles-->
@@ -179,7 +182,7 @@
   <!-- Start Footer Styles-->
   <style>
     footer {
-      position: fixed;
+      /*position: fixed;*/
       bottom: 0;
       left: 0;
       width: 100%;
@@ -200,6 +203,17 @@
     <li><a href="videoPhoto.html">Video & Photo</a></li>
     <li><a href="writtenWorks.html">Written Works</a></li>
     <li><a href="dj.html">Disc Jocky</a></li>
+    <!-- Audio Start-->
+    <div class="music">
+      <audio controls autoplay>
+        <source src="audio/MUSE_SCORE.mp3" type="audio/mpeg">
+        Your broswer does not support the audio element.
+      </audio>
+      <p class="p2">
+        You are now listenting to the MUSE Score.
+      </p>
+    </div>
+    <!-- Audio End-->
   </ul>
   <!-- Image & Bio Start-->
   <div class="flex-container">
@@ -254,15 +268,6 @@
   </div>
   <!-- Image & Bio End-->
 
-  <!-- Skills Start-->
-  <div class="div-bio">
-    <p class="p2">
-      MUSE Score.
-    </p>
-  </div>
-
-
-
   <!-- Footer Start-->
   <footer>
     <div class="div-bio">
@@ -290,14 +295,7 @@
     </div>
   </footer>
   <div class="bottom-row">
-    <!-- Audio Start-->
-    <div class="music">
-      <audio controls autoplay>
-        <source src="audio/MUSE_SCORE.mp3" type="audio/mpeg">
-        Your broswer does not support the audio element.
-      </audio>
-    </div>
-    <!-- Audio End-->
+
   </div>
 
   <!-- Input End-->
