@@ -96,8 +96,43 @@
     margin-bottom: 6;
   }
 
+  .container {
+    display: grid;
+    grid-template-areas:
+      "menu content"
+      "menu content";
+    grid-template-columns: 1fr 5fr;
+    gap: 2px;
+    background-color: rgb(94, 25, 159);
+    padding: 5px;
+  }
+
+  .game-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container div {
+    background-color: antiquewhite;
+    padding: 10px;
+  }
+
+  .container div.menu {
+    grid-area: menu;
+  }
+
+  .container div.content {
+    grid-area: content;
+    align-items: center;
+  }
+
+  .thumbnail {
+    width: 100%;
+  }
+
+
   footer {
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
     left: 0;
     width: 100%;
@@ -149,20 +184,67 @@
   <li><a href="dj.html">Disc Jocky</a></li>
 </ul>
 
-<!-- Start Buttons-->
-<button class="games-button" onclick="document.location='https://whitleywalton.itch.io/'">
-  itch.io
-</button>
-<!-- End Buttons-->
+<body>
+  <!-- Start Buttons-->
+  <button class="games-button" onclick="document.location='https://whitleywalton.itch.io/'">
+    itch.io
+  </button>
+  <!-- End Buttons-->
+  <!-- Container Start-->
+  <div class="container">
+    <div class="menu">
+      <h3>Quick Links</h3>
+      <a href="#">txt.Valentina</a>
+      <br><a href="#">Link 2</a>
+      <br><a href="#">Link 3</a>
+    </div>
+    <div class="content">
+      <div>
+        <h1 style="
+          color: rgb(87, 6, 140);
+          align-items: center;">New York University TISCH School of the Arts @ the NYU Game Center</h1>
+      </div>
 
-<!-- Footer Start-->
-<footer>
-  <div class="div-bio">
-    <p class="p2">
-      Coded by Whit Righteous.
-    </p>
+      <!-- txt.Valentina Start-->
+      <div class="game-info">
+        <div style="background-color: bisque;">
+          <img class="thumbnail" src="images/txtValentinaThumbnail.jpg">
+        </div>
+        <div style="background-color: bisque;">
+          <h2>
+            <italic>txt.Valentina</italic> (2025)
+          </h2>
+          <p>Genre: Queer, Horror, Chat-Based</p>
+          <p>Designed by Alex Tang, Selah Wright, Ethan Troxell, and Whit Walton</p>
+          <p>Developed in 3 weeks for Narrative Studio, txt.Valentina follows a shy girl and her manic pixie girl dream
+            as
+            they exchange texts over the course of 2 days. Depending on your answers, there are 3 routes to endure: girl
+            failure,
+            fizzle out, or standing up.</p>
+          <p>Created with Unity, Ink, and Aesprite, Whit was a writer and asset curator for the game, as well as
+            character
+            artist.</p>
+          <a href="https://whitleywalton.itch.io/txtvalentina">Text Valentina here...</a>
+        </div>
+      </div>
+      <!-- txt.Valentina End-->
+    </div>
   </div>
-</footer>
-<div class="bottom-row">
+  <!-- Container End-->
+
+  <!--Demo Start-->
+
+  <!-- Demo End -->
+
+  <!-- Footer Start-->
+  <footer>
+    <div class="div-bio">
+      <p class="p2">
+        Coded by Whit Righteous.
+      </p>
+    </div>
+  </footer>
+  <div class="bottom-row">
+</body>
 
 </html>
