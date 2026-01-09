@@ -55,6 +55,9 @@
     margin: 0;
     padding: 0;
     background-color: rgb(190, 22, 108);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
 
 
@@ -119,6 +122,10 @@
 
   .container div.menu {
     grid-area: menu;
+    position: sticky;
+    top: 45px;
+    left: 0;
+    align-self: start;
   }
 
   .container div.content {
@@ -127,7 +134,7 @@
   }
 
   .thumbnail {
-    width: 100%;
+    width: 90%;
   }
 
   .div-bio {
@@ -191,30 +198,31 @@
 </ul>
 
 <body>
-  <!-- Start Buttons-->
-  <button class="games-button" onclick="document.location='https://whitleywalton.itch.io/'">
-    itch.io
-  </button>
-  <!-- End Buttons-->
   <!-- Container Start-->
   <div class="container">
     <div class="menu">
+      <h3>Play all of my games on itch.io!</h3>
+      <!-- Start Buttons-->
+      <button class="games-button" onclick="document.location='https://whitleywalton.itch.io/'">
+        Play here!
+      </button>
+      <!-- End Buttons-->
       <h3>NYU Game Center</h3>
-      <a href="#">txt.Valentina (2025)</a>
-      <br><a href="#">Beat Squash (2025)</a>
-      <br><a href="#">Earth's Gemini Moon (2025)</a>
-      <br><a href="#">another day in atlanta (2025)</a>
-      <br><a href="#">Pet Him? (2025)</a>
-      <br><a href="#">Pink Pyramihead (2025)</a>
-      <br><a href="#">Uptown 1 (2025)</a>
-      <br><a href="#">DJ Exploration (2025)</a>
+      <a href="#txt.Valentina">txt.Valentina (2025)</a>
+      <br><a href="#beatSquash">Beat Squash (2025)</a>
+      <br><a href="#egm">Earth's Gemini Moon (2025)</a>
+      <br><a href="#adia">another day in atlanta (2025)</a>
+      <br><a href="#petHim">Pet Him? (2025)</a>
+      <br><a href="#pp">Pink Pyramihead (2025)</a>
+      <br><a href="#uptown1">Uptown 1 (2025)</a>
+      <br><a href="#djExpo">DJ Exploration (2025)</a>
       <h3>Personal Projects</h3>
-      <br><a href="#">DJ Apocalypse (2025)</a>
+      <br><a href="#djA">DJ Apocalypse (2025)</a>
       <h3>Spelman Innovation Lab</h3>
-      <br><a href="#">MUSE (2025)</a>
-      <br><a href="#">King Pidge (2024)</a>
-      <br><a href="#">Midnight Lavendar (2023)</a>
-      <br><a href="#">Chinese Racing Game (2022)</a>
+      <br><a href="#Muse">MUSE (2025)</a>
+      <br><a href="#KingPidge">King Pidge (2024)</a>
+      <br><a href="#ML">Midnight Lavendar (2023)</a>
+      <br><a href="#CRG">Chinese Racing Game (2022)</a>
 
     </div>
     <div class="content">
@@ -225,7 +233,7 @@
       </div>
 
       <!-- txt.Valentina Start-->
-      <div class="game-info">
+      <div class="game-info" id="txt.Valentina">
         <div style="background-color: rgb(255, 154, 91);">
           <img class="thumbnail" src="images/txtValentinaThumbnail.jpg">
         </div>
@@ -249,7 +257,7 @@
       <!-- txt.Valentina End-->
 
       <!-- beat squash Start-->
-      <div class="game-info">
+      <div class="game-info" id="beatSquash">
         <div style="background-color: rgb(255, 128, 177);">
           <img class="thumbnail" src="images/beatSquash.png">
         </div>
@@ -269,7 +277,7 @@
       </div>
       <!-- beat squash End-->
       <!-- earth's gemini moon Start-->
-      <div class="game-info">
+      <div class="game-info" id="egm">
         <div style="background-color: rgb(64, 2, 67);">
           <img class="thumbnail" src="images/egm.png">
         </div>
@@ -292,7 +300,7 @@
       <!-- earth's gemini moon End-->
 
       <!-- another day in atl Start-->
-      <div class="game-info">
+      <div class="game-info" id="adia">
         <div style="background-color: rgb(228 125 113);">
           <img class="thumbnail" src="images/adia.png">
         </div>
@@ -314,7 +322,7 @@
       </div>
       <!-- another day in atl End-->
       <!-- Pet Him Start-->
-      <div class="game-info">
+      <div class="game-info" id="petHim">
         <div style="background-color: rgb(89, 20, 13);">
           <img class="thumbnail" src="images/pH.png">
         </div>
@@ -337,7 +345,7 @@
       </div>
       <!-- Pet Him End-->
       <!-- PP Start-->
-      <div class="game-info">
+      <div class="game-info" id="pp">
         <div style="background-color: rgb(110 35 77);">
           <img class="thumbnail" src="images/pp.png">
         </div>
