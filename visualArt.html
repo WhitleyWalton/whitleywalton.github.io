@@ -16,142 +16,291 @@
   </div>
   </header>
   </head>
+  <!-- Paragraph Styles Start-->
+  <style>
+    header {
+      text-align: center;
+      padding: 2px;
+      background-color: rgb(154, 12, 130);
+      width: 100%;
+    }
+
+    .title {
+      font-family: monospace;
+      font-size: 35px;
+      font-weight: bold;
+      text-align: center;
+      color: antiquewhite;
+    }
+
+    .subtitle {
+      font-family: monospace;
+      font-size: 22px;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 6;
+
+    }
+
+    /*Style the topnav */
+    ul.topnav {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(190, 22, 108);
+    }
+
+
+    /*Style links in topnav */
+    ul.topnav li a {
+      display: block;
+      padding: 14px 16px;
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+    }
+
+    ul.topnav li a.active {
+      color: purple;
+      background-color: antiquewhite;
+    }
+
+    /* Change color on hover for topnav */
+    ul.topnav li a:hover {
+      background-color: purple;
+      color: antiquewhite;
+      transition: opacity 0.2s,
+        background-color 0.2s, color 0.2s;
+    }
+
+    .title {
+      font-family: monospace;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    .subtitle {
+      font-family: monospace;
+      font-size: 22px;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 6;
+    }
+
+    body {
+      margin: 0
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding: 0 15px;
+    }
+
+    .gallery-item {
+      position: relative;
+      width: calc(25% - 20px);
+      height: auto;
+      margin: 10px;
+      cursor: pointer;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.1);
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.8);
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.5s ease;
+    }
+
+    /* Modal content (image) */
+    .modal-content {
+      position: relative;
+      width: 25%;
+      height: 80%;
+      /* max-width: 90%;
+      max-height: 90%;
+      */
+      border-radius: 5px;
+      overflow: hidden;
+      animation: zoomIn 0.5s;
+    }
+
+    .modal-content-wide {
+      position: relative;
+      width: 40%;
+      height: 60%;
+      /* max-width: 90%;
+      max-height: 90%;
+      */
+      border-radius: 5px;
+      overflow: hidden;
+      animation: zoomIn 0.5s;
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.6);
+      }
+
+      to {
+        transform: scale(1);
+      }
+    }
+
+    .modal.show {
+      display: flex;
+      opacity: 1;
+    }
+
+    /* Close button */
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      color: #ffffff;
+      font-size: 35px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    /* Caption of modal image */
+    .caption {
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      text-align: center;
+      color: #ffffff;
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .gallery-item {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .gallery-item {
+        width: calc(100% - 20px);
+      }
+    }
+
+    footer {
+      /*position: fixed;*/
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: purple;
+      padding: 8x;
+      text-align: center;
+      z-index: 1000;
+      color: antiquewhite;
+    }
+  </style>
+  <!-- End Styles-->
+
+  <!-- Top row for options-->
+  <ul class="topnav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="games.html">Game Devsign</a></li>
+    <li><a class="active" href="visualArt.html">Visual Art</a></li>
+    <li><a href="videoPhoto.html">Video & Photo</a></li>
+    <li><a href="writtenWorks.html">Written Works</a></li>
+    <li><a href="dj.html">Disc Jocky</a></li>
+  </ul>
+
+  <div class="gallery">
+    <img src="images/CxH.jpg" alt="Chloe x Halle" class="gallery-item"
+      onclick="openModal('modal1', 'Chloe x Halle (2020), Charcoal on Paper')" width="600" height="400">
+    <img src="images/eye.jpg" alt="4 Eyes" class="gallery-item"
+      onclick="openModal('modal2', '4 Eyes (2024), Oil on Canvas')" width="600" height="400">
+    <img src="images/self.jpg" alt="Self (2021)" class="gallery-item"
+      onclick="openModal('modal3', 'Self (2021), Acrylic on Canvas')" width="600" height="400">
+    <img src="images/Virgo.jpg" alt="Virgo (2025)" class="gallery-item"
+      onclick="openModal('modal4', 'Virgo (2025), Pen on Paper')" width="600" height="400">
+    <img src="images/space.jpg" alt="Space (2024)" class="gallery-item"
+      onclick="openModal('modal5', 'Space (2025), Construction Paper')" width="600" height="400">
+    <img src="images/draft.jpg" alt="Liminal (2024)" class="gallery-item"
+      onclick="openModal('modal6', 'Liminal (2024), Pen on Paper')" width="600" height="400">
+  </div>
+
+  <div id="modal1" class="modal">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <img src="images/CxH.jpg" alt="Chloe x Halle" class="modal-content">
+    <div class="caption">Chloe x Halle (2020), Charcoal on Paper</div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <img src="images/eye.jpg" alt="4 Eyes" class="modal-content" width="600" height="400">
+    <div class="caption">4 Eyes (2024), Oil on Canvas</div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <img src="images/self.jpg" alt="Self (2021)" class="modal-content" width="600" height="400">
+    <div class="caption"></div>
+  </div>
+
+  <div id="modal4" class="modal">
+    <span class="close" onclick="closeModal('modal4')">&times;</span>
+    <img src="images/Virgo.jpg" alt="Virgo (2025)" class="modal-content" width="600" height="400">
+    <div class="caption"></div>
+  </div>
+
+  <div id="modal5" class="modal">
+    <span class="close" onclick="closeModal('modal5')">&times;</span>
+    <img src="images/space.jpg" alt="Space (2024)" class="modal-content-wide" width="600" height="400">
+    <div class="caption"></div>
+  </div>
+
+  <div id="modal6" class="modal">
+    <span class="close" onclick="closeModal('modal6')">&times;</span>
+    <img src="images/draft.jpg" alt="Liminal (2024)" class="modal-content-wide" width="600" height="400">
+    <div class="caption"></div>
+  </div>
+
+  <script>
+    function openModal(modalId, caption) {
+      let modal = document.getElementById(modalId);
+      modal.style.display = "flex";
+      modal.classList.add("show");
+      let message = modal.querySelector(".caption");
+      message.innerText = caption;
+    }
+
+    function closeModal(modalId) {
+      let modal = document.getElementById(modalId);
+      modal.classList.remove("show");
+      setTimeout(function () {
+        modal.style.display = "none";
+        modal.querySelector(".caption").innerText = "";
+      }, 300);
+    }
+  </script>
 </body>
-<!-- Paragraph Styles Start-->
-<style>
-  * {
-    box-sizing: border-box;
-
-  }
-
-  header {
-    text-align: center;
-    padding: 2px;
-    background-color: rgb(154, 12, 130);
-    width: 100%;
-  }
-
-  .title {
-    font-family: monospace;
-    font-size: 35px;
-    font-weight: bold;
-    text-align: center;
-    color: antiquewhite;
-  }
-
-  .subtitle {
-    font-family: monospace;
-    font-size: 22px;
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 6;
-
-  }
-
-  /*Style the topnav */
-  ul.topnav {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(190, 22, 108);
-  }
-
-
-  /*Style links in topnav */
-  ul.topnav li a {
-    display: block;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-  }
-
-  ul.topnav li a.active {
-    color: purple;
-    background-color: antiquewhite;
-  }
-
-  /* Change color on hover for topnav */
-  ul.topnav li a:hover {
-    background-color: purple;
-    color: antiquewhite;
-    transition: opacity 0.2s,
-      background-color 0.2s, color 0.2s;
-  }
-
-  .title {
-    font-family: monospace;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: underline;
-  }
-
-  .subtitle {
-    font-family: monospace;
-    font-size: 22px;
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 6;
-  }
-
-  body {
-    margin: 0
-  }
-
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: purple;
-    padding: 8x;
-    text-align: center;
-    z-index: 1000;
-    color: antiquewhite;
-  }
-</style>
-<!-- Start Button Styles-->
-<style>
-  .games-button {
-    background-color: rgb(154, 12, 130);
-    color: rgb(255, 255, 255);
-    border-color: rgb(239, 63, 201);
-    height: 36px;
-    width: 100px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-right: 4px;
-    font-weight: bold;
-    display: inline-block;
-
-    transition: opacity 0.2s,
-      background-color 0.2s, color 0.2s, box-shadow 0.15s;
-  }
-
-  .games-button:hover {
-    opacity: 0.8;
-    box-shadow: 5px 8px 10px rgb(65, 2, 55, 0.4);
-  }
-
-  .games-button:active {
-    opacity: 0.4;
-    background-color: rgb(255, 239, 251);
-    color: rgb(154, 12, 130);
-  }
-</style>
-<!-- End Button Styles-->
-
-<!-- Top row for options-->
-<ul class="topnav">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="games.html">Game Devsign</a></li>
-  <li><a class="active" href="visualArt.html">Visual Art</a></li>
-  <li><a href="videoPhoto.html">Video & Photo</a></li>
-  <li><a href="writtenWorks.html">Written Works</a></li>
-  <li><a href="dj.html">Disc Jocky</a></li>
-</ul>
 
 <!-- Footer Start-->
 <footer>
