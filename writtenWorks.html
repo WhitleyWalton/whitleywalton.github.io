@@ -16,147 +16,170 @@
   </div>
   </header>
   </head>
-</body>
-<!-- Paragraph Styles Start-->
-<style>
-  * {
-    box-sizing: border-box;
+  <!-- Paragraph Styles Start-->
+  <style>
+    * {
+      box-sizing: border-box;
 
-  }
+    }
 
-  header {
-    text-align: center;
-    padding: 2px;
-    background-color: rgb(154, 12, 130);
-    width: 100%;
-  }
+    header {
+      text-align: center;
+      padding: 2px;
+      background-color: rgb(154, 12, 130);
+      width: 100%;
+    }
 
-  .title {
-    font-family: monospace;
-    font-size: 35px;
-    font-weight: bold;
-    text-align: center;
-    color: antiquewhite;
-  }
+    .title {
+      font-family: monospace;
+      font-size: 35px;
+      font-weight: bold;
+      text-align: center;
+      color: antiquewhite;
+    }
 
-  .subtitle {
-    font-family: monospace;
-    font-size: 22px;
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 6;
+    .subtitle {
+      font-family: monospace;
+      font-size: 22px;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 6;
 
-  }
+    }
 
-  /*Style the topnav */
-  ul.topnav {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(190, 22, 108);
-  }
+    /*Style the topnav */
+    ul.topnav {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(190, 22, 108);
+    }
 
 
-  /*Style links in topnav */
-  ul.topnav li a {
-    display: block;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-  }
+    /*Style links in topnav */
+    ul.topnav li a {
+      display: block;
+      padding: 14px 16px;
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+    }
 
-  ul.topnav li a.active {
-    color: purple;
-    background-color: antiquewhite;
-  }
+    ul.topnav li a.active {
+      color: purple;
+      background-color: antiquewhite;
+    }
 
-  /* Change color on hover for topnav */
-  ul.topnav li a:hover {
-    background-color: purple;
-    color: antiquewhite;
-    transition: opacity 0.2s,
-      background-color 0.2s, color 0.2s;
-  }
+    /* Change color on hover for topnav */
+    ul.topnav li a:hover {
+      background-color: purple;
+      color: antiquewhite;
+      transition: opacity 0.2s,
+        background-color 0.2s, color 0.2s;
+    }
 
-  .title {
-    font-family: monospace;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: underline;
-  }
+    .title {
+      font-family: monospace;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: underline;
+    }
 
-  .subtitle {
-    font-family: monospace;
-    font-size: 22px;
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 6;
-  }
+    .subtitle {
+      font-family: monospace;
+      font-size: 22px;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 6;
+    }
 
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: purple;
-    padding: 8x;
-    text-align: center;
-    z-index: 1000;
-    color: antiquewhite;
-  }
-</style>
-<!-- Start Button Styles-->
-<style>
-  .games-button {
-    background-color: rgb(154, 12, 130);
-    color: rgb(255, 255, 255);
-    border-color: rgb(239, 63, 201);
-    height: 36px;
-    width: 100px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-right: 4px;
-    font-weight: bold;
-    display: inline-block;
+    body {
+      margin: 0
+    }
 
-    transition: opacity 0.2s,
-      background-color 0.2s, color 0.2s, box-shadow 0.15s;
-  }
+    .docu {
+      display: inline-block;
+      width: 100%;
+      height: 1000px;
+    }
 
-  .games-button:hover {
-    opacity: 0.8;
-    box-shadow: 5px 8px 10px rgb(65, 2, 55, 0.4);
-  }
 
-  .games-button:active {
-    opacity: 0.4;
-    background-color: rgb(255, 239, 251);
-    color: rgb(154, 12, 130);
-  }
-</style>
-<!-- End Button Styles-->
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: purple;
+      padding: 8x;
+      text-align: center;
+      z-index: 1000;
+      color: antiquewhite;
+    }
+  </style>
+  <!-- Start Button Styles-->
+  <style>
+    .games-button {
+      background-color: rgb(154, 12, 130);
+      color: rgb(255, 255, 255);
+      border-color: rgb(239, 63, 201);
+      height: 36px;
+      width: 100px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-right: 4px;
+      font-weight: bold;
+      display: inline-block;
 
-<!-- Top row for options-->
-<ul class="topnav">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="games.html">Game Devsign</a></li>
-  <li><a href="visualArt.html">Visual Art</a></li>
-  <li><a href="videoPhoto.html">Video & Photo</a></li>
-  <li><a class="active" href="writtenWorks.html">Written Works</a></li>
-  <li><a href="dj.html">Disc Jocky</a></li>
-</ul>
+      transition: opacity 0.2s,
+        background-color 0.2s, color 0.2s, box-shadow 0.15s;
+    }
 
-<!-- Footer Start-->
-<footer>
-  <div class="div-bio">
-    <p class="p2">
-      Coded by Whit Righteous.
-    </p>
+    .games-button:hover {
+      opacity: 0.8;
+      box-shadow: 5px 8px 10px rgb(65, 2, 55, 0.4);
+    }
+
+    .games-button:active {
+      opacity: 0.4;
+      background-color: rgb(255, 239, 251);
+      color: rgb(154, 12, 130);
+    }
+  </style>
+  <!-- End Button Styles-->
+
+  <!-- Top row for options-->
+  <ul class="topnav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="games.html">Game Devsign</a></li>
+    <li><a href="visualArt.html">Visual Art</a></li>
+    <li><a href="videoPhoto.html">Video & Photo</a></li>
+    <li><a class="active" href="writtenWorks.html">Written Works</a></li>
+    <li><a href="dj.html">Disc Jocky</a></li>
+  </ul>
+
+  <!-- Sankof(A)I Start-->
+  <div class="docu">
+    <iframe src="documents/Sankof(A)I Senior Thesis.pdf" title="Spelman College Senior Thesis (2024)" width="50%"
+      height="1000"></iframe>
   </div>
-</footer>
-<div class="bottom-row">
+  <!-- Sankof(A)I End-->
+
+
+
+
+
+  <!-- Footer Start-->
+  <footer>
+    <div class=" div-bio">
+      <p class="p2">
+        Coded by Whit Righteous.
+      </p>
+    </div>
+  </footer>
+  <div class="bottom-row">
+
+</body>
 
 </html>
