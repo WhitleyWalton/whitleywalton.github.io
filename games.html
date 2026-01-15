@@ -143,6 +143,7 @@
 
   .thumbnail {
     width: 90%;
+    align-content: center;
   }
 
   .div-bio {
@@ -173,7 +174,7 @@
     color: rgb(255, 255, 255);
     border-color: rgb(239, 63, 201);
     height: 36px;
-    width: 100px;
+    width: 200px;
     border-radius: 10px;
     cursor: pointer;
     margin-right: 4px;
@@ -213,12 +214,12 @@
     <div class="menu">
       <h3>Play all of my games on itch.io!</h3>
       <!-- Start Buttons-->
-      <button class="games-button" onclick="document.location='https://whitleywalton.itch.io/'">
+      <button class="games-button" style="width: 100px"
+        onclick="javascript:window.open('https://whitleywalton.itch.io/', '_blank')" ;>
         Play here!
       </button>
       <!-- End Buttons-->
       <h3>NYU Game Center</h3>
-      <h4>Digital Games</h4>
       <a style="color: rgb(154, 12, 130)" href="#txt.Valentina">txt.Valentina (2025)</a>
       <br><a style="color: rgb(154, 12, 130)" href="#beatSquash">Beat Squash (2025)</a>
       <br><a style="color: rgb(154, 12, 130)" href="#egm">Earth's Gemini Moon (2025)</a>
@@ -245,11 +246,11 @@
 
       <!-- txt.Valentina Start-->
       <div class="game-info" id="txt.Valentina">
-        <div style="background-color: rgb(255, 154, 91);">
+        <div style="background-color: rgb(255, 126, 46);">
           <img class="thumbnail" src="images/txtValentinaThumbnail.jpg">
         </div>
         <div style="background-color: rgb(255, 154, 91);">
-          <h2>
+          <h2 style="color:rgb(192, 59, 2)">
             <italic>txt.Valentina</italic> (2025)
           </h2>
           <p>Genre: Queer, Horror, Chat-Based</p>
@@ -262,20 +263,24 @@
           <p>Created with Unity, Ink, and Aesprite, Whit was a writer and asset curator for the game, as well as
             character
             artist.</p>
-          <a style="color:rgb(255, 238, 206)" href="https://whitleywalton.itch.io/txtvalentina" target="_blank">Text
+
+          <button class="games-button"
+            style="background-color:rgb(255, 238, 206); color:rgb(192, 59, 2); border-color:rgb(255, 126, 46);"
+            onclick="javascript:window.open('https://whitleywalton.itch.io/txtvalentina', '_blank');">Text
             Valentina
-            here...</a>
+            here...
+          </button>
         </div>
       </div>
       <!-- txt.Valentina End-->
 
       <!-- beat squash Start-->
       <div class="game-info" id="beatSquash">
-        <div style="background-color: rgb(255, 4, 188);">
+        <div style="background-color: rgb(209, 0, 153);">
           <img class="thumbnail" src="images/beatSquash.png">
         </div>
         <div style="background-color:rgb(255, 4, 188);">
-          <h2>
+          <h2 style="color:rgb(255, 227, 249)">
             <italic>Beat Squash</italic> (2025)
           </h2>
           <p>Genre: Rhythm, Co-Op, Cute</p>
@@ -287,19 +292,22 @@
             voice actor. </p>
           <p style="color: rgb(255, 227, 249);">Showcased at NYU Game Center Winter Showcase 2025. </p>
 
-          <a style="color:rgb(255, 227, 249);" href="https://whitleywalton.itch.io/beat-squash" target="_blank">Squash
+          <button class="games-button"
+            style="background-color:rgb(255, 227, 249); color:rgb(209, 0, 153); border-color:rgb(209, 0, 153);"
+            onclick="javascript:window.open('https://whitleywalton.itch.io/beat-squash', '_blank');">Squash
             the Beat
-            here...</a>
+            here...
+          </button>
         </div>
       </div>
       <!-- beat squash End-->
       <!-- earth's gemini moon Start-->
       <div class="game-info" id="egm">
-        <div style="background-color: rgb(64, 2, 67);">
+        <div style="background-color: rgb(24, 1, 25);">
           <img class="thumbnail" src="images/egm.png">
         </div>
         <div style="background-color:rgb(64, 2, 67);">
-          <h2 style="color:white">
+          <h2 style="color:rgb(176, 115, 233)">
             <italic>Earth's Gemini Moon</italic> (2025)
           </h2>
           <p style="color:white">Genre: Queer, Physics, Romance</p>
@@ -312,19 +320,24 @@
           <p style="color:white">Created with Unity, Whit was the developer, narrative writer, and audio engineer.
           </p>
           <p style="color: rgb(176, 115, 233);">Showcased at NYU Game Center Winter Showcase 2025. </p>
-          <a style="color:white" href="https://whitleywalton.itch.io/earths-gemini-moon" target="_blank">Run away from
-            Earth here...</a>
+
+          <button class="games-button"
+            style="background-color:rgb(24, 1, 25); color:rgb(176, 115, 233); border-color:rgb(176, 115, 233); width: 250px"
+            onclick="javascript:window.open('https://whitleywalton.itch.io/earths-gemini-moon', '_blank');">Run away
+            from
+            Earth here...
+          </button>
         </div>
       </div>
       <!-- earth's gemini moon End-->
 
       <!-- another day in atl Start-->
       <div class="game-info" id="adia">
-        <div style="background-color: rgb(228 125 113);">
+        <div style="background-color: rgb(222, 94, 79);">
           <img class="thumbnail" src="images/adia.png">
         </div>
         <div style="background-color: rgb(228 125 113);">
-          <h2>
+          <h2 style="color: brown">
             <italic>another day in atlanta</italic> (2025)
           </h2>
           <p>Genre: Queer, Interactive Fiction, HBCU</p>
@@ -336,19 +349,23 @@
             get your crush to buy you lunch at the mall.
           </p>
           <p>Created with Inform 7, Whit was the narrative writer and developer.</p>
-          <a style="color: antiquewhite" href="https://whitleywalton.itch.io/another-day-in-atlanta" target="_blank">Go
+
+          <button class="games-button"
+            style="background-color:antiquewhite; color:rgb(222, 94, 79); border-color:rgb(222, 94, 79); width:250px;"
+            onclick="javascript:window.open('https://whitleywalton.itch.io/another-day-in-atlanta', '_blank');">Go
             to the West End
-            Mall here...</a>
+            Mall here...
+          </button>
         </div>
       </div>
       <!-- another day in atl End-->
       <!-- Pet Him Start-->
       <div class="game-info" id="petHim">
-        <div style="background-color: rgb(89, 20, 13);">
+        <div style="background-color: rgb(62, 14, 9);">
           <img class="thumbnail" src="images/pH.png">
         </div>
         <div style="background-color: rgb(89, 20, 13);">
-          <h2 style="color: white;">
+          <h2 style="color: antiquewhite;">
             <italic>Pet Him?</italic> (2025)
           </h2>
           <p style="color: white;">Genre: Queer, Mouse-Only, Cute</p>
@@ -361,17 +378,20 @@
           </p>
           <p style="color: white;">Created with Unity and Aesprite, Whit was the artist, audio engineer, and developer.
           </p>
-          <a style="color: white;" href="https://whitleywalton.itch.io/pet-him" target="_blank">Pet him here...</a>
+          <button class="games-button"
+            style="background-color:antiquewhite; color:rgb(89, 20, 13); border-color:rgb(62, 14, 9);"
+            onclick="javascript:window.open('https://whitleywalton.itch.io/pet-him', '_blank');">Pet him here...
+          </button>
         </div>
       </div>
       <!-- Pet Him End-->
       <!-- PP Start-->
       <div class="game-info" id="pp">
-        <div style="background-color: rgb(110 35 77);">
+        <div style="background-color: rgb(89, 28, 63);">
           <img class="thumbnail" src="images/pp.png">
         </div>
         <div style="background-color:rgb(110 35 77);">
-          <h2 style="color: white;">
+          <h2 style="color: rgb(255, 193, 245);">
             <italic>Pink Pyramihead</italic> (2025)
           </h2>
           <p style="color: white;">Genre: Horror, Walking Sim, Jumpscare</p>
@@ -384,9 +404,13 @@
           <p style="color: white;">Created with Unity and Audacity, Whit was the audio engineer, environmental artist,
             and
             voice actor. </p>
-          <a style="color: white;" href="https://whitleywalton.itch.io/pink-pyramihead" target="_blank">Look for Pink
+
+          <button class="games-button"
+            style="background-color:white; color:rgb(89, 28, 63); border-color:rgb(89, 28, 63); width: 250px;"
+            onclick="javascript:window.open('https://whitleywalton.itch.io/pink-pyramihead', '_blank');">Look for Pink
             Pyramihead
-            here...</a>
+            here...
+          </button>
         </div>
       </div>
       <!-- PP End-->
@@ -395,11 +419,11 @@
         <div style="background-color: rgb(0, 0, 0);">
           <img class="thumbnail" src="images/uptown1.png">
         </div>
-        <div style="background-color:rgb(0, 0, 0);">
-          <h2 style="color: rgb(91 250 103);">
-            <italic>Uptown 1</italic> (2025)
+        <div style="background-color:rgb(24, 24, 24);">
+          <h2 style="color: rgb(170, 255, 177);">
+            Uptown 1 (2025)
           </h2>
-          <p style="color:rgb(91 250 103);">Genre: Puzzle, Interactive Fiction, Matrix</p>
+          <p style="color:rgb(91 250 103);">Genre: Puzzle, Interactive Fiction, Sci-Fi</p>
           <p style="color: rgb(91 250 103);">Designed by Whit Walton</p>
           <p style="color: rgb(91 250 103);">Developed in 2 weeks for Narrative Studio, Uptown 1 is an Interactive
             Fiction game about esacping from your reality in a small West Harlem apartment.
@@ -411,19 +435,23 @@
             target="_blank">Featured on
             the Interactive Fiction Database</a><br>
           <br>
-          <a style="color: rgb(170, 255, 177);" href="https://whitleywalton.itch.io/uptown-1" target="_blank">Take the 1
+
+          <button class="games-button"
+            style="background-color:black; color:rgb(170, 255, 177); border-color:rgb(91 250 103); width: 250px;"
+            onclick="javascript:window.open('https://whitleywalton.itch.io/uptown-1', '_blank');">Take the 1
             Uptown
-            here...</a>
+            here...
+          </button>
         </div>
       </div>
       <!-- Uptown 1 End-->
       <!-- DJ Expo Start-->
       <div class="game-info" id="djExpo">
-        <div style="background-color: rgb(19 8 127);">
+        <div style="background-color: rgb(11, 4, 67);">
           <img class="thumbnail" src="images/djExpo.png">
         </div>
         <div style="background-color:rgb(19 8 127);">
-          <h2 style="color: rgb(255, 255, 255);">
+          <h2 style="color: rgb(167, 162, 255);">
             <italic>DJ Exploration</italic> (2025)
           </h2>
           <p style="color:rgb(255, 255, 255);">Genre: Music, Flatgame, Cyberpunk</p>
@@ -436,10 +464,14 @@
           </p>
           <p style="color: rgb(255, 255, 255);">Created with GameMaker, Serato, and Procreate, Whit was the sound mixer,
             artist, and developer. </p>
-          <a style="color: rgb(255, 255, 255);"
-            href="https://whitleywalton.itch.io/dj-exploration-nyu-game-center-flatgame" target="_blank">Explore my
+
+          <button class="games-button"
+            style="background-color:rgb(167, 162, 255); color:rgb(0, 0, 0); border-color:rgb(11, 4, 67); width: 250px;"
+            onclick="javascript:window.open('https://whitleywalton.itch.io/dj-exploration-nyu-game-center-flatgame', '_blank');">Explore
+            my
             brain
-            here...</a>
+            here...
+          </button>
         </div>
       </div>
       <!-- DJ Expo End-->
@@ -451,11 +483,11 @@
       </div>
       <!-- DJ Apocalypse Start-->
       <div class="game-info" id="djA">
-        <div style="background-color: rgb(127, 8, 107);">
+        <div style="background-color: rgb(67, 4, 57);">
           <iframe width="550" height="315" src="images/GamePlayDemo.mp4" sandbox></iframe>
         </div>
         <div style="background-color:rgb(127, 8, 107);">
-          <h2 style="color: rgb(255, 255, 255);">
+          <h2 style="color: rgb(251, 171, 255);">
             <italic>DJ Apocalypse</italic> (2025)
           </h2>
           <p style="color:rgb(255, 255, 255);">Genre: Music, Rhythm, Zombie</p>
@@ -481,8 +513,8 @@
         <div style="background-color: rgb(0, 0, 0);">
           <iframe width="550" height="315" src="images/MUSE Sizzle.mp4" sandbox></iframe>
         </div>
-        <div style="background-color:rgb(0, 0, 0);">
-          <h2 style="color: rgb(255, 255, 255);">
+        <div style="background-color:rgb(24, 24, 24);">
+          <h2 style="color: rgb(57, 207, 241);">
             <italic>MUSE</italic> (2025)
           </h2>
           <p style="color:rgb(255, 255, 255);">Genre: Queer, VR, HBCU</p>
@@ -503,11 +535,11 @@
       <!-- MUSE End-->
       <!-- King Pidge Start-->
       <div class="game-info" id="KingPidge">
-        <div style="background-color: rgb(188, 185, 185);">
+        <div style="background-color: rgb(175, 172, 172);">
           <img class="thumbnail" src="images/kingPidge.png">
         </div>
         <div style="background-color:rgb(188, 185, 185);">
-          <h2 style="color: rgb(39, 35, 35);">
+          <h2 style="color: rgb(122, 0, 0);">
             <italic>King Pidge</italic> (2024)
           </h2>
           <p style="color:rgb(39, 35, 35);">Genre: One-Shot, Platformer, 24-Hours</p>
@@ -520,20 +552,24 @@
           <p style="color: rgb(39, 35, 35);">Created with Unity and Procreate, Whit was the
             art lead, character designer, and senior developer. </p>
           <p style="color: rgb(122, 0, 0);">Winner of Best Art (Non-AI) at the 2024 HBCU Game Jam. </p>
-          <a style="color: rgb(39, 35, 35);" href="https://whitleywalton.itch.io/king-pidge" target="_blank">Get bread
+
+          <button class="games-button"
+            style="background-color:rgb(122, 0, 0); color:rgb(214, 212, 212); border-color:rgb(175, 172, 172); width: 250px;"
+            onclick="javascript:window.open('https://whitleywalton.itch.io/king-pidge', '_blank');">Get bread
             for your
             family
-            here...</a>
+            here...
+          </button>
         </div>
       </div>
       <!-- King Pidge End-->
       <!-- Midnight Lavender Start-->
       <div class="game-info" id="ML">
-        <div style="background-color: rgb(220, 208, 255);">
+        <div style="background-color: rgb(188, 165, 255);">
           <iframe width="550" height="315" src="images/Midnight.Lavender.1.mp4" sandbox></iframe>
         </div>
         <div style="background-color:rgb(220, 208, 255);">
-          <h2 style="color: rgb(61, 16, 66);">
+          <h2 style="color: rgb(120, 18, 167);">
             <italic>Midnight Lavender</italic> (2023)
           </h2>
           <p style="color:rgb(61, 16, 66);">Genre: Queer, Puzzle, HBCU</p>
@@ -557,11 +593,11 @@
       <!-- Midnight Lavender End-->
       <!-- CRG Start-->
       <div class="game-info" id="CRG">
-        <div style="background-color: rgb(209, 181, 123);">
+        <div style="background-color: rgb(201, 167, 100);">
           <img class="thumbnail" src="images/Chinese Racing Game.png">
         </div>
         <div style="background-color:rgb(209, 181, 123);">
-          <h2 style="color: rgb(39, 35, 35);">
+          <h2 style="color: rgb(103, 74, 16);">
             <italic>Chinese Racing Game</italic> (2022)
           </h2>
           <p style="color:rgb(39, 35, 35);">Genre: Educational, Mandarin, Car</p>
@@ -573,10 +609,14 @@
           </p>
           <p style="color: rgb(39, 35, 35);">Created with Unity and Procreate, Whit was the
             artist, voice actor, and developer. </p>
-          <p style="color: rgb(103, 74, 16);">Showcased at Spelman College Research Day 2023. </p>
-          <a style="color: rgb(39, 35, 35);" href="https://whitleywalton.itch.io/final-project-chinese-racing-game"
-            target="_blank">Learn Mandarin Chinese
-            here...</a>
+          <p style="color: rgb(85, 60, 9);">Showcased at Spelman College Research Day 2023. </p>
+
+          <button class="games-button"
+            style="background-color:rgb(201, 167, 100); color:rgb(103, 74, 16); border-color:rgb(103, 74, 16); width: 250px;"
+            onclick="javascript:window.open('https://whitleywalton.itch.io/final-project-chinese-racing-game', '_blank');">Learn
+            Mandarin Chinese
+            here...
+          </button>
         </div>
       </div>
       <!-- King Pidge End-->
