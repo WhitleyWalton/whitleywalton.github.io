@@ -16,197 +16,216 @@
   </div>
   </header>
   </head>
-</body>
-<!-- Paragraph Styles Start-->
-<style>
-  * {
-    box-sizing: border-box;
+  <!-- Paragraph Styles Start-->
+  <style>
+    * {
+      box-sizing: border-box;
 
-  }
+    }
 
-  header {
-    text-align: center;
-    padding: 2px;
-    background-color: rgb(154, 12, 130);
-    width: 100%;
-  }
+    header {
+      text-align: center;
+      padding: 2px;
+      background-color: rgb(154, 12, 130);
+      width: 100%;
+    }
 
-  .title {
-    font-family: monospace;
-    font-size: 35px;
-    font-weight: bold;
-    text-align: center;
-    color: antiquewhite;
-  }
+    .title {
+      font-family: monospace;
+      font-size: 35px;
+      font-weight: bold;
+      text-align: center;
+      color: antiquewhite;
+    }
 
-  .subtitle {
-    font-family: monospace;
-    font-size: 22px;
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 6;
+    .subtitle {
+      font-family: monospace;
+      font-size: 22px;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 6;
 
-  }
+    }
 
-  body {
-    margin: 0
-  }
+    body {
+      margin: 0
+    }
 
-  /*Style the topnav */
-  ul.topnav {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(190, 22, 108);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
+    /*Style the topnav */
+    ul.topnav {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(190, 22, 108);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
 
-  /*Style links in topnav */
-  ul.topnav li a {
-    display: block;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-family: monospace;
-  }
+    /*Style links in topnav */
+    ul.topnav li a {
+      display: block;
+      padding: 14px 16px;
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      font-family: monospace;
+    }
 
-  ul.topnav li a.active {
-    color: purple;
-    background-color: antiquewhite;
-  }
+    ul.topnav li a.active {
+      color: purple;
+      background-color: antiquewhite;
+    }
 
-  /* Change color on hover for topnav */
-  ul.topnav li a:hover {
-    background-color: purple;
-    color: antiquewhite;
-    transition: opacity 0.2s,
-      background-color 0.2s, color 0.2s;
-  }
+    /* Change color on hover for topnav */
+    ul.topnav li a:hover {
+      background-color: purple;
+      color: antiquewhite;
+      transition: opacity 0.2s,
+        background-color 0.2s, color 0.2s;
+    }
 
-  .title {
-    font-family: monospace;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: underline;
-  }
+    .title {
+      font-family: monospace;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: underline;
+    }
 
-  .subtitle {
-    font-family: monospace;
-    font-size: 22px;
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 6;
-  }
+    .subtitle {
+      font-family: monospace;
+      font-size: 22px;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 6;
+    }
 
-  body {
-    margin: 0
-  }
+    body {
+      margin: 0
+    }
 
-  .soundcloud {
-    display: inline;
-  }
+    .soundcloud {
+      display: inline;
+    }
 
-  footer {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: purple;
-    padding: 8x;
-    text-align: center;
-    z-index: 1000;
-    color: antiquewhite;
-  }
-</style>
-<!-- Start Button Styles-->
-<style>
-  .games-button {
-    background-color: rgb(154, 12, 130);
-    color: rgb(255, 255, 255);
-    border-color: rgb(239, 63, 201);
-    height: 36px;
-    width: 100px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-right: 4px;
-    font-weight: bold;
-    display: inline-block;
+    footer {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: purple;
+      padding: 8x;
+      text-align: center;
+      z-index: 1000;
+      color: antiquewhite;
+    }
+  </style>
+  <!-- Start Button Styles-->
+  <style>
+    .games-button {
+      background-color: rgb(154, 12, 130);
+      color: rgb(255, 255, 255);
+      border-color: rgb(239, 63, 201);
+      height: 36px;
+      width: 100px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-right: 4px;
+      font-weight: bold;
+      display: inline-block;
 
-    transition: opacity 0.2s,
-      background-color 0.2s, color 0.2s, box-shadow 0.15s;
-  }
+      transition: opacity 0.2s,
+        background-color 0.2s, color 0.2s, box-shadow 0.15s;
+    }
 
-  .games-button:hover {
-    opacity: 0.8;
-    box-shadow: 5px 8px 10px rgb(65, 2, 55, 0.4);
-  }
+    .games-button:hover {
+      opacity: 0.8;
+      box-shadow: 5px 8px 10px rgb(65, 2, 55, 0.4);
+    }
 
-  .games-button:active {
-    opacity: 0.4;
-    background-color: rgb(255, 239, 251);
-    color: rgb(154, 12, 130);
-  }
-</style>
-<!-- End Button Styles-->
+    .games-button:active {
+      opacity: 0.4;
+      background-color: rgb(255, 239, 251);
+      color: rgb(154, 12, 130);
+    }
+  </style>
+  <!-- End Button Styles-->
 
-<!-- Top row for options-->
-<ul class="topnav">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="games.html">Game Devsign</a></li>
-  <li><a href="visualArt.html">Visual Art</a></li>
-  <li><a href="videoPhoto.html">Video & Photo</a></li>
-  <li><a href="writtenWorks.html">Written Works</a></li>
-  <li><a class="active" href="dj.html">Disc Jocky</a></li>
-</ul>
+  <!-- Top row for options-->
+  <ul class="topnav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="games.html">Game Devsign</a></li>
+    <li><a href="visualArt.html">Visual Art</a></li>
+    <li><a href="videoPhoto.html">Video & Photo</a></li>
+    <li><a href="writtenWorks.html">Written Works</a></li>
+    <li><a class="active" href="dj.html">Disc Jocky</a></li>
+  </ul>
 
-<body>
-  <div class="soundcloud">
-    <iframe width="30%" height="450" scrolling="no" frameborder="no" allow="autoplay"
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2292618632&color=%233c443c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-    <div
-      style="font-size: 25px; color: #000000;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: monospace;font-weight: 100;">
-      <a href="https://soundcloud.com/whit-candid" title="dj r!ght" target="_blank"
-        style="color: #000000; text-decoration: none;">dj r!ght</a> · <a
-        href="https://soundcloud.com/whit-candid/summer_2025" title="cunty alumnae summer" target="_blank"
-        style="color: #000000; text-decoration: none;">the train clock resets</a>
-    </div>
+  <body>
     <div class="soundcloud">
       <iframe width="30%" height="450" scrolling="no" frameborder="no" allow="autoplay"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2127426108&color=%233c443c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2292618632&color=%233c443c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
       <div
         style="font-size: 25px; color: #000000;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: monospace;font-weight: 100;">
         <a href="https://soundcloud.com/whit-candid" title="dj r!ght" target="_blank"
           style="color: #000000; text-decoration: none;">dj r!ght</a> · <a
           href="https://soundcloud.com/whit-candid/summer_2025" title="cunty alumnae summer" target="_blank"
-          style="color: #000000; text-decoration: none;">cunty alumnae summer</a>
+          style="color: #000000; text-decoration: none;">the train clock resets</a>
       </div>
-    </div>
-    <div class="soundcloud">
-      <iframe width="30%" height="450" scrolling="no" frameborder="no" allow="autoplay"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2166603039&color=%2329251e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-      <div
-        style="font-size: 25px; color: #000000;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: monospace;font-weight: 100;">
-        <a href="https://soundcloud.com/whit-candid" title="dj r!ght" target="_blank"
-          style="color: #000000; text-decoration: none;">dj r!ght</a> · <a
-          href="https://soundcloud.com/whit-candid/charli-xcx-club-classics-satisfaction-remix-x-young-nudy-passion-fruit"
-          title="satisfaction fruit" target="_blank" style="color: #000000; text-decoration: none;">satisfaction
-          fruit</a>
+      <div class="soundcloud">
+        <iframe width="30%" height="450" scrolling="no" frameborder="no" allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2127426108&color=%233c443c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <div
+          style="font-size: 25px; color: #000000;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: monospace;font-weight: 100;">
+          <a href="https://soundcloud.com/whit-candid" title="dj r!ght" target="_blank"
+            style="color: #000000; text-decoration: none;">dj r!ght</a> · <a
+            href="https://soundcloud.com/whit-candid/summer_2025" title="cunty alumnae summer" target="_blank"
+            style="color: #000000; text-decoration: none;">cunty alumnae summer</a>
+        </div>
       </div>
-    </div>
-</body>
+      <div class="soundcloud">
+        <iframe width="30%" height="450" scrolling="no" frameborder="no" allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2166603039&color=%2329251e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <div
+          style="font-size: 25px; color: #000000;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: monospace;font-weight: 100;">
+          <a href="https://soundcloud.com/whit-candid" title="dj r!ght" target="_blank"
+            style="color: #000000; text-decoration: none;">dj r!ght</a> · <a
+            href="https://soundcloud.com/whit-candid/charli-xcx-club-classics-satisfaction-remix-x-young-nudy-passion-fruit"
+            title="satisfaction fruit" target="_blank" style="color: #000000; text-decoration: none;">satisfaction
+            fruit</a>
+        </div>
+      </div>
+  </body>
 
-<!-- Footer Start-->
-<footer>
-  <div class="div-bio">
-    <p class="p2">
-      Coded by Whit Righteous.
-    </p>
-  </div>
-</footer>
+  <!-- Footer Start-->
+  <footer>
+    <div class="div-bio">
+      <p class="p2">
+        wmw9967@nyu.edu
+      </p>
+    </div>
+
+    <div class="div-bio">
+      <p class="p2">
+        <a style="color:antiquewhite" href="https://www.linkedin.com/in/whitley-walton/" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+
+    <div class="div-bio">
+      <p class="p2">
+        <a style="color:antiquewhite" href="https://whitleywalton.itch.io/" target="_blank">itch.io</a>
+      </p>
+    </div>
+
+    <div class="div-bio">
+      <p class="p2">
+        Coded by Whit Righteous.
+      </p>
+    </div>
+  </footer>
+
+</body>
 
 </html>
